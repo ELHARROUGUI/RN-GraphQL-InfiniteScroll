@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "extends": [
+    "@react-native-community",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["react", "react-hooks"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ],
+    "no-console": ["warn"],
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "quotes": ["warn", "double"],
+    "semi": ["warn"]
+  }
+}
