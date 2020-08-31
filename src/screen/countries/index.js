@@ -40,12 +40,7 @@ const Country = () => {
   return (
     <View style={style.container}>
       <Text style={style.title}>Countries</Text>
-      <ScrollView
-        // onScrollEndDrag={() => {
-        //   loadMore();
-        // }}
-        onScrollEndDrag={loadMore}
-      >
+      <ScrollView onScrollEndDrag={loadMore}>
         {items.map(({ _id, name, flag: { emoji } }) => (
           <Text key={`key-${_id}`} style={style.item}>
             {emoji} - {name}
